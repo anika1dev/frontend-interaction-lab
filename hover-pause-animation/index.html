@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hover-pause-animation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Auto Scroll Interaction Demo</h1>
+    <p>A box continuously moves upward inside a fixed container.</p>
+    <p>When the user hovers over the box:</p>
+    <ul>
+      <li>the animation pauses</li>
+    </ul>
+    <p>When the user leaves:</p>
+    <ul>
+      <li>animation resumes automatically</li>
+    </ul>
+    <ul>
+      <h3>Concepts used:</h3>
+      <li>setInterval animation loop</li>
+      <li>transform: traslateY()</li>
+      <li>overflow hidden</li>
+      <li>hover interaction</li>
+      <li>pause/resume animation control</li>
+      <li>boundary reset logic</li>
+    </ul>
+    <div class="pauseContainer" id="pauseContainer">
+      <div class="pauseBox" id="pauseBox"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

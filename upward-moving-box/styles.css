@@ -1,0 +1,29 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: rgb(243, 241, 241);
+}
+.container{
+  margin-left: 40px;
+}
+
+.boxContainer{
+  height: 300px;
+  width: 300px;
+  position: relative;
+  border: 1px solid rgb(5, 76, 5);
+  background: linear-gradient(90deg, rgb(19, 108, 19), rgb(140, 212, 140));
+  border-radius: 16px;
+  overflow: hidden;
+  margin: 10px 20px;
+}
+.box{
+  position: absolute;
+  height: 100px;
+  width:100px;
+  border: 1px solid rgb(85, 9, 9);
+  background: radial-gradient(rgb(154, 254, 32), rgb(8, 81, 20));
+  border-radius: 50%;
+  margin-left: 100px;
+  margin-top: 100px;
+}

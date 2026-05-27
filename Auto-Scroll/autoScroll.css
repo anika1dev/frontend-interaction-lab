@@ -1,0 +1,49 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: rgb(243, 241, 241);
+}
+.container{
+  margin-left: 40px;
+}
+.ticker{
+  height: 30px;
+  width: 400px;
+  margin: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+.tickerContent{
+  position: absolute;
+  width: 2000px;
+  animation: scrollSide 50s linear infinite;
+}
+@keyframes scrollSide{
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-100%);
+  }
+}
+
+
+
+.textContainer{
+  margin: 10px;
+  height: 70px;
+  width: 700px;
+  overflow: hidden;
+  border: 2px solid green;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: justify;
+  font-size: large;
+  background:linear-gradient(rgb(250, 128, 230) 60%, rgb(247, 217, 245) 80% , white);
+  position: relative;
+}
+.text{
+  position: absolute;
+}

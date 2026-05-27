@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Scroll</title>
+  <link rel="stylesheet" href="autoScroll.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Auto-Scroll</h1>
+    <h2>1. Horizontal Infinite Ticker</h2>
+    <p>A continuously moving horizontal ticker built using CSS animations and @keyframes.</p>
+    <ul>
+      <h3>Concepts used:</h3>
+      <li>@keyframes</li>
+      <li>translateX()</li>
+      <li>infinite linear animation</li>
+      <li>overflow hidden</li>
+    </ul>
+    <div class="ticker">
+      <div class="tickerContent">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente temporibus aperiam molestiae earum accusantium cupiditate voluptatum autem, eveniet reprehenderit magni.</div>
+    </div>
+    <h2>2. Vertical Auto Scroll</h2>
+    <p>A vertically moving auto-scroll component built using JavaScript.</p>
+    <p>Content moves upward smoothly once then disappears.</p>
+    <ul>
+      <h3>Concepts used:</h3>
+      <li>setInterval</li>
+      <li>translateY()</li>
+      <li>hidden overflow</li>
+    </ul>
+    <div class="textContainer" id="textContainer">
+      <div class="text" id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quaerat consectetur atque voluptas magni a eveniet ab earum alias similique.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, quod? Laboriosam, pariatur officiis rem sit ea maxime. Itaque nihil maxime perspiciatis illum! Cum dolorum autem, rerum odit iste, quod temporibus distinctio dignissimos facere dolores hic a ex modi ratione saepe!
+      </div>
+    </div>
+    
+    
+  </div>
+  <script>
+    const text = document.getElementById("text");
+    let t = 0;
+    setInterval(()=>{
+      t = t-1;
+      text.style.transform = `translateY(${t}px)`;
+    }, 30);
+  </script>
+</body>
+</html>
