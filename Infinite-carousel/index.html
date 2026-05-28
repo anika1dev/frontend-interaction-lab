@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infinite-Carousel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <section class="description">
+      <h1>Infinite Carousel Demo</h1>
+      <hr>
+      <p>A horizontal moving infinite carousel. Card move inside a fixed viewport while overflow is hidden to display one card at a time.</p>
+      <p>Navigation Buttons shift the carousel track left and right.</p>
+      <p>When the carousel reaches the end, the position resets seamlessly to create an infinite looping illusion.</p>
+      <p>concepts used: </p>
+      <ul>
+        <li>translateX()</li>
+        <li>hidden overflow</li>
+        <li>viewport and track architecture</li>
+        <li>index-based movement</li>
+        <li>event-driven navigation</li>
+        <li>boundary reset logic</li>
+        <li>infinite looping illusion</li>
+      </ul>
+    </section>
+    <section class="carousel" id="carousel">
+      <button class="prev" id="prev"><</button>
+      <div class="viewport" id="viewport">
+        <div class="track" id="track">
+          <div class="card" id="card">
+            <img src="image/card1.jpg" alt="lanterns and trees">
+          </div>
+          <div class="card" id="card">
+            <img src="image/card2.jpg" alt="chinese girl in blue dress">
+          </div>
+          <div class="card" id="card">
+            <img src="image/card3.jpg" alt="statues and greenery">
+          </div>
+          <div class="card" id="card">
+            <img src="image/card4.jpg" alt="fountain behing a big enterance">
+          </div>
+          <div class="card" id="card">
+            <img src="image/card5.jpg" alt="fountain and dragon">
+          </div>
+          <div class="card" id="card">
+            <img src="image/card6.jpg" alt="heaven scenery">
+          </div>
+          <div class="card" id="card">
+            <img src="image/card7.jpg" alt="light poles between trees">
+          </div>
+          <div class="card" id="card">
+            <img src="image/card8.jpg" alt="greenery palace">
+          </div>
+          <div class="card" id="card">
+            <img src="image/card9.jpg" alt="glass roof place">
+          </div>
+          <div class="card" id="card">
+            <img src="image/card10.jpg" alt="glass roof place with sun rays">
+          </div>
+        </div>
+      </div>
+      <button class="next" id="next">></button>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
