@@ -65,7 +65,7 @@ body{
   width: 100%;
   max-width: 500px;
   border-radius: 50px;
-  background-color: yellow;
+  background-color: rgb(5, 4, 43);
   flex: 0 0 100%;
   overflow: hidden;
 
